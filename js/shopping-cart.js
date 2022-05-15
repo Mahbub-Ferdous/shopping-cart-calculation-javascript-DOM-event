@@ -34,7 +34,15 @@ function calculateTotal(quantityFieldIdPhone, quantityFieldIdCase) {
   const phoneTotal = getInputFieldValue(quantityFieldIdPhone) * 1219;
   const caseTotal = getInputFieldValue(quantityFieldIdCase) * 59;
   const subTotal = phoneTotal + caseTotal;
-  document.getElementById("subTotal").innerText = subTotal;
+  // catch the subtotal innerText by using id
+  const subtotalField = (document.getElementById("subTotal").innerText =
+    subTotal);
+  // with tax calculation to catch tax innerText by using id - and the tax parcentage is 15%
+  const taxField = (document.getElementById("tax").innerText =
+    (subTotal * 15) / 100);
+  // additon subtotal and tax than we get the actual total for checkout
+  const totalField = (document.getElementById("total").innerText =
+    subtotalField + taxField);
 }
 
 // add click handler with (+) sign to increase product quantity and show with calculation in phone item
