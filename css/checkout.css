@@ -1,0 +1,11 @@
+.margin-bgColor-center {
+  background-color: rgb(139, 238, 41);
+  text-align: center;
+  border-radius: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  color: rgb(37, 33, 33);
+}
+.text-color {
+  color: rgb(23, 90, 214);
+}

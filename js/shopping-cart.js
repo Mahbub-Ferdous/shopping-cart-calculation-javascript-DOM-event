@@ -86,3 +86,8 @@ document.getElementById("case-minus").addEventListener("click", () => {
   // calculate total
   calculateTotal("quantityField-phone", "quantityField-case");
 });
+
+// 'checkout' button click event handler for next page
+document.getElementById("btn-checkout").addEventListener("click", () => {
+  window.location.href = "http://127.0.0.1:5500/html/checkout.html";
+});

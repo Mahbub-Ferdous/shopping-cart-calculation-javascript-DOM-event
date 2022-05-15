@@ -17,20 +17,20 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <!-- external style.css added -->
-    <link href="style.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <section>
       <div class="container">
-        <h2>My shopping cart</h2>
+        <h2 class="text-center mt-3">My shopping cart</h2>
         <div class="cart">
           <div class="col-md-12 col-lg-10 mx-auto">
             <!-- first - products - starts -->
             <div class="cart-item">
               <div class="row">
                 <div class="col-md-7 center-item">
-                  <img src="images/product-1.png" alt="" />
+                  <img src="/images/product-1.png" alt="" />
                   <h5>iPhone 11 128GB Black</h5>
                 </div>
                 <div class="col-md-5 center-item">
@@ -50,7 +50,7 @@
                     </button>
                   </div>
                   <h5>$<span id="price-phone">1219</span></h5>
-                  <img src="images/remove.png" alt="" class="remove-item" />
+                  <img src="/images/remove.png" alt="" class="remove-item" />
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@
             <div class="cart-item">
               <div class="row">
                 <div class="col-md-7 center-item mx-auto">
-                  <img src="images/product-2.png" alt="" />
+                  <img src="/images/product-2.png" alt="" />
                   <h5>iPhone 11 Silicone Case - Black</h5>
                 </div>
                 <div class="col-md-5 center-item">
@@ -79,7 +79,7 @@
                     </button>
                   </div>
                   <h5>$<span id="price-case">59</span></h5>
-                  <img src="images/remove.png" alt="" class="remove-item" />
+                  <img src="/images/remove.png" alt="" class="remove-item" />
                 </div>
               </div>
             </div>
@@ -102,7 +102,11 @@
             <!-- shopping calculation ends -->
             <!-- checkout button starts -->
             <div class="col-md-12 pt-4 pb-4">
-              <button type="button" class="btn btn-success check-out">
+              <button
+                id="btn-checkout"
+                type="button"
+                class="btn btn-success check-out"
+              >
                 Check Out
               </button>
             </div>
