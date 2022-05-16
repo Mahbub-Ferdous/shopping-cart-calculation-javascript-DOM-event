@@ -89,5 +89,5 @@ document.getElementById("case-minus").addEventListener("click", () => {
 
 // 'checkout' button click event handler for next page
 document.getElementById("btn-checkout").addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/html/checkout.html";
+  window.location.href = "checkout.html";
 });
